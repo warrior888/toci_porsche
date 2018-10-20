@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleApp1.Dal.Attributes;
 using ConsoleApp1.Dal.PostgreSql;
 using ConsoleApp1.Interfaces;
 
@@ -64,9 +65,13 @@ namespace ConsoleApp1
 
             string classofentity = "public class " + pieces[2] + " { } ";
 
-            using (PostgreSqlDbAccess access = new PostgreSqlDbAccess("user=postgres password=beatka db=devs host=localhost"))
+            using (PostgreSqlDbAccess access = new PostgreSqlDbAccess("User ID=postgres;Password=beatka;Host=localhost;Port=5432;Database=porsche; "))
             {
-                access.Insert(new Developers { id = 1, name = "Andrzej"});
+                foreach (string dev in listaprogramistowtociporsche)
+                {
+                    access.Insert(new Developers { name = dev });
+                }
+                
             }
 
         }
@@ -74,7 +79,9 @@ namespace ConsoleApp1
 
     public class Developers : IEntity
     {
+        [SqlInsertIgnore]
         public int id { get; set; } //5
+
         public string name { get; set; }
     }
 

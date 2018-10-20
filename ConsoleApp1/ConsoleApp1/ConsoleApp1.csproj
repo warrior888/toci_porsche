@@ -61,6 +61,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dal\Attributes\SqlInsertIgnoreAttribute.cs" />
     <Compile Include="Dal\DbAccessBase.cs" />
     <Compile Include="Dal\MsSql\MsSqlDbAccess.cs" />
     <Compile Include="Dal\PostgreSql\PostgreSqlDbAccess.cs" />

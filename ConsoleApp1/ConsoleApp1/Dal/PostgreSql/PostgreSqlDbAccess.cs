@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using ConsoleApp1.Interfaces;
 using Npgsql;
 
@@ -11,7 +12,7 @@ namespace ConsoleApp1.Dal.PostgreSql
 
         public PostgreSqlDbAccess(string connectionString)
         {
-            //Connect(connectionString);// vmc #1
+            Connect(connectionString);// vmc #1
         }
 
         protected override bool Disconnect()
@@ -69,18 +70,23 @@ namespace ConsoleApp1.Dal.PostgreSql
             /// refleksja
             
             List<string> columns = new List<string>(entity.GetType().GetProperties().Length); 
+
             List<string> values = new List<string>(entity.GetType().GetProperties().Length); 
             
             foreach (var item in entity.GetType().GetProperties())
             {
-                columns.Add(item.Name);
-                //values.Add(item.GetValue(item).ToString());
+                if (!item.CustomAttributes.Any(s => s.AttributeType.Name == "SqlInsertIgnoreAttribute"))
+                {
+                    columns.Add(item.Name);
+                    values.Add(item.GetValue(entity).ToString());
+                }
             }
 
-            values.Add("1");
-            values.Add("Andrzej");
+            query = string.Format(query, entity.GetType().Name, string.Join(", ", columns), "'" + string.Join("', '", values) + "'");
 
-            query = string.Format(query, entity.GetType().Name, string.Join(", ", columns), "\"" + string.Join("\", \"", values) + "\"");
+            NpgsqlCommand command = new NpgsqlCommand(query, connection);
+
+            command.ExecuteNonQuery();
 
             return 1;
         }
