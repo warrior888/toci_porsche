@@ -38,8 +38,14 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="Npgsql, Version=4.0.3.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
       <HintPath>..\packages\Npgsql.4.0.3\lib\net451\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="PayPal, Version=1.9.1.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PayPal.1.9.1\lib\net451\PayPal.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -61,12 +67,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarRental\Cars\Audi.cs" />
+    <Compile Include="CarRental\Cars\CarModels\A6.cs" />
+    <Compile Include="CarRental\Cars\CarModels\R8.cs" />
+    <Compile Include="CarRental\Interfaces\CreditCards\ICreditCard.cs" />
+    <Compile Include="CarRental\Interfaces\CreditCards\IPayment.cs" />
+    <Compile Include="CarRental\Interfaces\CreditCards\IPaymentResponse.cs" />
+    <Compile Include="CarRental\Interfaces\Geography\ILocation.cs" />
+    <Compile Include="CarRental\Interfaces\IClient.cs" />
+    <Compile Include="CarRental\Interfaces\IRental.cs" />
+    <Compile Include="CarRental\Interfaces\IRentalOptions.cs" />
+    <Compile Include="CarRental\Interfaces\IVehicle.cs" />
+    <Compile Include="CarRental\Interfaces\ISell.cs" />
+    <Compile Include="CarRental\Vehicle.cs" />
     <Compile Include="Dal\Attributes\SqlInsertIgnoreAttribute.cs" />
     <Compile Include="Dal\DbAccessBase.cs" />
     <Compile Include="Dal\MsSql\MsSqlDbAccess.cs" />
     <Compile Include="Dal\PostgreSql\PostgreSqlDbAccess.cs" />
     <Compile Include="Interfaces\IDbAccess.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="PaymentIntegration\Interfaces\IPayPalPayment.cs" />
+    <Compile Include="PaymentIntegration\Payment.cs" />
+    <Compile Include="PaymentIntegration\TociPayPal\PayPalPayment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
