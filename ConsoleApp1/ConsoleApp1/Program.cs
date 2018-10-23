@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleApp1.CarRental.CarRentalGallery;
 using ConsoleApp1.Dal.Attributes;
 using ConsoleApp1.Dal.PostgreSql;
 using ConsoleApp1.Interfaces;
@@ -73,6 +74,8 @@ namespace ConsoleApp1
                 }
                 
             }
+
+//            ICarGallery<int, string, double> test ; //= new 
 
         }
     }

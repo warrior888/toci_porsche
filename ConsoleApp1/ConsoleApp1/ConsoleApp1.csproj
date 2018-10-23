@@ -67,6 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarRental\CarRentalGallery\ICarGallery.cs" />
     <Compile Include="CarRental\Cars\Audi.cs" />
     <Compile Include="CarRental\Cars\CarModels\A6.cs" />
     <Compile Include="CarRental\Cars\CarModels\R8.cs" />
@@ -84,6 +85,10 @@
     <Compile Include="Dal\DbAccessBase.cs" />
     <Compile Include="Dal\MsSql\MsSqlDbAccess.cs" />
     <Compile Include="Dal\PostgreSql\PostgreSqlDbAccess.cs" />
+    <Compile Include="Gallery\Interfaces\IExif.cs" />
+    <Compile Include="Gallery\Interfaces\IFile.cs" />
+    <Compile Include="Gallery\Interfaces\IPhoto.cs" />
+    <Compile Include="Gallery\Interfaces\IVideo.cs" />
     <Compile Include="Interfaces\IDbAccess.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="PaymentIntegration\Interfaces\IPayPalPayment.cs" />
@@ -91,11 +96,17 @@
     <Compile Include="PaymentIntegration\TociPayPal\PayPalPayment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sharding\ICluster.cs" />
+    <Compile Include="Sharding\IShardingStrategy.cs" />
+    <Compile Include="Sharding\ModuloSharding.cs" />
+    <Compile Include="Sharding\ShardingStrategyBase.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MassStoarage\MogileFs\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
