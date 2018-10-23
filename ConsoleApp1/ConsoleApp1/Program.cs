@@ -2,6 +2,7 @@
 using ConsoleApp1.CarRental.CarRentalGallery;
 using ConsoleApp1.Dal.Attributes;
 using ConsoleApp1.Dal.PostgreSql;
+using ConsoleApp1.Insurance;
 using ConsoleApp1.Interfaces;
 
 namespace ConsoleApp1
@@ -77,6 +78,8 @@ namespace ConsoleApp1
 
 //            ICarGallery<int, string, double> test ; //= new 
 
+            InsuranceSuperCover isc = new InsuranceSuperCover();
+            
         }
     }
 

@@ -89,6 +89,15 @@
     <Compile Include="Gallery\Interfaces\IFile.cs" />
     <Compile Include="Gallery\Interfaces\IPhoto.cs" />
     <Compile Include="Gallery\Interfaces\IVideo.cs" />
+    <Compile Include="Insurance\Extensions\InsuranceRoadsideAsistantseExtension.cs" />
+    <Compile Include="Insurance\Extensions\InsuranceStealExtension.cs" />
+    <Compile Include="Insurance\Insurance.cs" />
+    <Compile Include="Insurance\InsurancePrimary.cs" />
+    <Compile Include="Insurance\InsuranceSuperCover.cs" />
+    <Compile Include="Insurance\InsurnaceSuperCoverPlus.cs" />
+    <Compile Include="Insurance\Interfaces\IInsurance.cs" />
+    <Compile Include="Insurance\Interfaces\IInsuranceAccident.cs" />
+    <Compile Include="Insurance\Interfaces\IInsuranceAccidentPlus.cs" />
     <Compile Include="Interfaces\IDbAccess.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="PaymentIntegration\Interfaces\IPayPalPayment.cs" />
