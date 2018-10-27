@@ -84,9 +84,10 @@
   <ItemGroup>
     <Compile Include="CarRental\CarRentalGallery\ICarGallery.cs" />
     <Compile Include="CarRental\Cars\Audi.cs" />
-    <Compile Include="CarRental\Cars\CarModels\A6.cs" />
-    <Compile Include="CarRental\Cars\CarModels\R8.cs" />
     <Compile Include="CarRental\Client.cs" />
+    <Compile Include="CarRental\Interfaces\CarOptions\IEngine.cs" />
+    <Compile Include="CarRental\Interfaces\CarOptions\IFuel.cs" />
+    <Compile Include="CarRental\Interfaces\CarOptions\IGearbox.cs" />
     <Compile Include="CarRental\Interfaces\CreditCards\ICreditCard.cs" />
     <Compile Include="CarRental\Interfaces\CreditCards\IPayment.cs" />
     <Compile Include="CarRental\Interfaces\CreditCards\IPaymentResponse.cs" />
@@ -137,6 +138,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CarRental\Cars\CarModels\" />
     <Folder Include="MassStoarage\MogileFs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

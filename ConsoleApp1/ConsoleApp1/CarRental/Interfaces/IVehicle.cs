@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp1.CarRental.Interfaces
+﻿using ConsoleApp1.CarRental.Interfaces.CarOptions;
+
+namespace ConsoleApp1.CarRental.Interfaces
 {
     public interface IVehicle
     {
@@ -8,6 +10,8 @@
 
         int Milleage { get; set; }
 
-        double HorsePower { get; set; }
+        IEngine Engine { get; set; }
+
+        IGearbox Gearbox { get; set; }
     }
 }
