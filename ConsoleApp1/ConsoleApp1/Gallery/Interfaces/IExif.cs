@@ -4,6 +4,6 @@ namespace ConsoleApp1.Gallery.Interfaces
 {
     public interface IExif
     {
-        ILocation Location { get; set; }
+        IGeographicsLocation Location { get; set; }
     }
 }

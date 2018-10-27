@@ -8,7 +8,11 @@ namespace ConsoleApp1.CarRental.Interfaces
         string Name { get; set; }
         string SurName { get; set; }
         string Pesel { get; set; }
-        ICreditCard CreditCard { get; set; }
+    //    ICreditCard CreditCard { get; set; }
+        string Email { get; set; }
+        int TelephoneNumber { get; set; }
+        string TelephoneType { get; set; }       
+        bool JoinToTociPreferred { get; set; }
 
     }
 }

@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using ConsoleApp1.CarRental.CarRentalGallery;
 using ConsoleApp1.Dal.Attributes;
 using ConsoleApp1.Dal.PostgreSql;
+using ConsoleApp1.GenericList;
 using ConsoleApp1.Insurance;
 using ConsoleApp1.Interfaces;
 
@@ -30,7 +32,34 @@ namespace ConsoleApp1
 
             int xor = 5 ^ 2;
 
+
             bool logicznyprzyklad = 7 > 9 && 8 < 9; // flase true
+
+
+
+
+
+            int zwrotka;
+            List<int> osobyStarszeLista = new List<int>(); //tworzymy liste intów ktora bedzie przechowywac wynik metody z Klasy Lista osobyStarszeNiz15() - metoda zwraca liste intów
+            //dlatego mozemy sobie przypisac do innej listy (typy sie zgadzaja)
+
+            Lista wiek=new Lista();
+            wiek.DodajWiek();
+            wiek.DodajWiek(20);
+            zwrotka=wiek.zwrocWiek();
+
+            osobyStarszeLista = wiek.osobyStarszeNiz15();
+
+            Console.WriteLine("Liczba zwracaba :{0} stan zapisywania: {1}",zwrotka, wiek.zapiywaniepliku());
+            Console.WriteLine("{0}", wiek.zwrocWiek());
+
+            foreach (var osoba in osobyStarszeLista)
+            {
+                Console.WriteLine("Osoba starsza : {0}",osoba);
+            }
+
+            ////petle i tablice
+            /// 
 
             Console.WriteLine(wynik);
            //string wpisuzytkownika = Console.ReadLine();

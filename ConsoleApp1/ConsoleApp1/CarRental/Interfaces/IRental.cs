@@ -11,9 +11,9 @@ namespace ConsoleApp1.CarRental.Interfaces
 
         DateTime EndDate { get; set; }
 
-        ILocation VehicleRetrivalLocation { get; set; }
+        IGeographicsLocation VehicleRetrivalLocation { get; set; }
 
-        ILocation VehicleReturnLocation { get; set; }
+        IGeographicsLocation VehicleReturnLocation { get; set; }
 
 
     }

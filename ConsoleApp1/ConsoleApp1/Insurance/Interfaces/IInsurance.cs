@@ -9,5 +9,6 @@ namespace ConsoleApp1.Insurance.Interfaces
         IInsuranceAccident TypeOfAccident { get; set; }
 
         IInsuranceAccident InsuranceAccident { get; set; }
+
     }
 }
