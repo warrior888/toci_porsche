@@ -15,9 +15,5 @@ namespace ConsoleApp1.CarRental.CarRentalGallery
 
         TPhotos GetPhotos(long carId);
 
-        ///hey czy widzisz to co wpisalem :D?
-        ///
-        /// a no widzę 
-        /// 
     }
 }
