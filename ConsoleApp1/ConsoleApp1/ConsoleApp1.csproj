@@ -83,14 +83,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CarRental\CarRentalGallery\ICarGallery.cs" />
-    <Compile Include="CarRental\Cars\Audi.cs" />
+    <Compile Include="CarRental\Cars\Car.cs" />
     <Compile Include="CarRental\Client.cs" />
+    <Compile Include="CarRental\Engines\IElectricEngine.cs" />
+    <Compile Include="CarRental\Engines\IGasolineEngine.cs" />
+    <Compile Include="CarRental\Engines\IHybridEngine.cs" />
+    <Compile Include="CarRental\Engines\IOilEngine.cs" />
     <Compile Include="CarRental\Interfaces\CarOptions\IEngine.cs" />
     <Compile Include="CarRental\Interfaces\CarOptions\IFuel.cs" />
     <Compile Include="CarRental\Interfaces\CarOptions\IGearbox.cs" />
     <Compile Include="CarRental\Interfaces\CreditCards\ICreditCard.cs" />
     <Compile Include="CarRental\Interfaces\CreditCards\IPayment.cs" />
     <Compile Include="CarRental\Interfaces\CreditCards\IPaymentResponse.cs" />
+    <Compile Include="CarRental\Interfaces\ICarFeatures.cs" />
     <Compile Include="CarRental\Interfaces\ILicence.cs" />
     <Compile Include="CarRental\Interfaces\Licences\ICarLicence.cs" />
     <Compile Include="CarRental\Interfaces\Licences\IFlyLicence.cs" />

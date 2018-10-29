@@ -3,7 +3,10 @@ using ConsoleApp1.CarRental.Interfaces.CarOptions;
 
 namespace ConsoleApp1.CarRental
 {
-    public abstract class Vehicle : IVehicle
+    public abstract class Vehicle<TEngine, TGearbox, TCarFeatures> : IVehicle<IEngine, IGearbox, ICarFeatures>
+        where TEngine : IEngine
+        where TGearbox : IGearbox
+        where TCarFeatures : ICarFeatures 
     {
         public IRental Rent(IRentalOptions options)
         {
@@ -18,5 +21,6 @@ namespace ConsoleApp1.CarRental
         public abstract int Milleage { get; set; }
         public abstract IEngine Engine { get; set; }
         public abstract IGearbox Gearbox { get; set; }
+        public abstract ICarFeatures CarFeatures { get; set; }
     }
 }

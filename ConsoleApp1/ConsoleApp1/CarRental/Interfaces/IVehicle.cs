@@ -1,8 +1,14 @@
-﻿using ConsoleApp1.CarRental.Interfaces.CarOptions;
+﻿using System.Dynamic;
+using ConsoleApp1.CarRental.Interfaces.CarOptions;
 
 namespace ConsoleApp1.CarRental.Interfaces
 {
-    public interface IVehicle
+    public interface IVehicle<TEngine, TGearbox, TCarFeatures>
+        where TEngine : IEngine
+        where TGearbox : IGearbox
+        where TCarFeatures : ICarFeatures
+    
+    
     {
         IRental Rent(IRentalOptions options);
 
@@ -10,8 +16,12 @@ namespace ConsoleApp1.CarRental.Interfaces
 
         int Milleage { get; set; }
 
-        IEngine Engine { get; set; }
+        TEngine Engine { get; set; }
 
-        IGearbox Gearbox { get; set; }
+        TGearbox Gearbox { get; set; }
+
+        TCarFeatures CarFeatures { get; set; }
+   
+
     }
 }

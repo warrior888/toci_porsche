@@ -1,6 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using ConsoleApp1.CarRental.CarRentalGallery;
+using ConsoleApp1.CarRental.Cars;
+using ConsoleApp1.CarRental.Engines;
+using ConsoleApp1.CarRental.Interfaces;
+using ConsoleApp1.CarRental.Interfaces.CarOptions;
 using ConsoleApp1.Dal.Attributes;
 using ConsoleApp1.Dal.PostgreSql;
 using ConsoleApp1.GenericList;
@@ -13,6 +17,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            //IVehicle<IEngine, IGearbox, ICarFeatures> auto = new Car();
+
+            IVehicle<IEngine, IGearbox, ICarFeatures> auto = new Car<IOilEngine, IGearbox, ICarFeatures>();
+            //auto.CarFeatures.Mark
             int dzielna = 5;
 
 
@@ -36,8 +44,8 @@ namespace ConsoleApp1
             bool logicznyprzyklad = 7 > 9 && 8 < 9; // flase true
 
 
-
-
+            //Dictionary<string, IVehicle<string, string> > djafkds = new Dictionary<string, IVehicle<string, string>>();
+            //Dictionary<string, IGearbox> fbdfd = new Dictionary<string, IGearbox>();
 
             int zwrotka;
             List<int> osobyStarszeLista = new List<int>(); //tworzymy liste intów ktora bedzie przechowywac wynik metody z Klasy Lista osobyStarszeNiz15() - metoda zwraca liste intów
