@@ -1,5 +1,5 @@
 ﻿using System.Collections.Generic;
-using ConsoleApp1.Dal.PostgreSql;
+//using ConsoleApp1.Dal.PostgreSql;
 using ConsoleApp1.Interfaces;
 
 namespace ConsoleApp1.Dal

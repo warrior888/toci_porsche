@@ -1,4 +1,4 @@
-﻿using System;
+﻿/*using System;
 using System.Collections.Generic;
 using System.Linq;
 using ConsoleApp1.Interfaces;
@@ -91,4 +91,4 @@ namespace ConsoleApp1.Dal.PostgreSql
             return 1;
         }
     }
-}
+}*/

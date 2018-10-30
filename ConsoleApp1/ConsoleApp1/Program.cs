@@ -6,7 +6,7 @@ using ConsoleApp1.CarRental.Engines;
 using ConsoleApp1.CarRental.Interfaces;
 using ConsoleApp1.CarRental.Interfaces.CarOptions;
 using ConsoleApp1.Dal.Attributes;
-using ConsoleApp1.Dal.PostgreSql;
+//using ConsoleApp1.Dal.PostgreSql;
 using ConsoleApp1.GenericList;
 using ConsoleApp1.Insurance;
 using ConsoleApp1.Interfaces;
@@ -104,11 +104,11 @@ namespace ConsoleApp1
 
             string classofentity = "public class " + pieces[2] + " { } ";
 
-            using (PostgreSqlDbAccess access = new PostgreSqlDbAccess("User ID=postgres;Password=beatka;Host=localhost;Port=5432;Database=porsche; "))
+            //using (PostgreSqlDbAccess access = new PostgreSqlDbAccess("User ID=postgres;Password=beatka;Host=localhost;Port=5432;Database=porsche; "))
             {
                 foreach (string dev in listaprogramistowtociporsche)
                 {
-                    access.Insert(new Developers { name = dev });
+                   // access.Insert(new Developers { name = dev });
                 }
                 
             }

@@ -108,10 +108,7 @@ C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.dll
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Abstractions.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Maps.Abstractions.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\PayPal.dll
@@ -120,10 +117,7 @@ C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.dll
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.xml
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.xml
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Abstractions.pdb
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Maps.Abstractions.pdb
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\PayPal.xml
@@ -132,3 +126,8 @@ C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.xml
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.pdb
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework6.Npgsql.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework6.Npgsql.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.xml
