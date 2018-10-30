@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using ConsoleApp1.CarRental;
 using ConsoleApp1.CarRental.CarRentalGallery;
 using ConsoleApp1.CarRental.Cars;
 using ConsoleApp1.CarRental.Engines;
 using ConsoleApp1.CarRental.Interfaces;
 using ConsoleApp1.CarRental.Interfaces.CarOptions;
+using ConsoleApp1.CarRental.Office;
 using ConsoleApp1.Dal.Attributes;
 //using ConsoleApp1.Dal.PostgreSql;
 using ConsoleApp1.GenericList;
@@ -17,6 +19,11 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            CarRentalOffice cro = new CarRentalOffice();
+           
+            var result = cro.AvailableCars(new RentalOptions() {Client = new Client(){} , KilometerLimit = 3999, Price = 3000, RentalIntarval = 5, StartDate = new DateTime(2018, 7, 7)});
+
+
             //IVehicle<IEngine, IGearbox, ICarFeatures> auto = new Car();
 
             IVehicle<IEngine, IGearbox, ICarFeatures> auto = new Car<IOilEngine, IGearbox, ICarFeatures>();

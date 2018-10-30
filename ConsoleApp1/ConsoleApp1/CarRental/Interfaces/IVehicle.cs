@@ -1,4 +1,5 @@
-﻿using System.Dynamic;
+﻿using System.Collections.Generic;
+using System.Dynamic;
 using ConsoleApp1.CarRental.Interfaces.CarOptions;
 
 namespace ConsoleApp1.CarRental.Interfaces
@@ -12,6 +13,8 @@ namespace ConsoleApp1.CarRental.Interfaces
     {
         IRental Rent(IRentalOptions options);
 
+        List<IRental> Rentals { get; set; }
+
         int YearOfRegistration { get; set; }
 
         int Milleage { get; set; }
@@ -22,6 +25,6 @@ namespace ConsoleApp1.CarRental.Interfaces
 
         TCarFeatures CarFeatures { get; set; }
    
-
+        bool IsRent { get; set; }
     }
 }

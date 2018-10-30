@@ -101,8 +101,6 @@ C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.
 C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.xml
 C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.pdb
 C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
@@ -125,9 +123,9 @@ C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.xml
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.pdb
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework6.Npgsql.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework6.Npgsql.xml
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.pdb
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache

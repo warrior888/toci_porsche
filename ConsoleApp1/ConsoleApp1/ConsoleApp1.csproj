@@ -99,7 +99,13 @@
     <Compile Include="CarRental\Interfaces\Licences\ICarLicence.cs" />
     <Compile Include="CarRental\Interfaces\Licences\IFlyLicence.cs" />
     <Compile Include="CarRental\Interfaces\Licences\IWaterLicence.cs" />
+    <Compile Include="CarRental\Office\CarRentalOffice.cs" />
+    <Compile Include="CarRental\Office\CarRentalOfficeBase.cs" />
+    <Compile Include="CarRental\Office\Interfaces\ICarRentalOffice.cs" />
+    <Compile Include="CarRental\Rental.cs" />
+    <Compile Include="CarRental\RentalOptions.cs" />
     <Compile Include="GenericList\Lista.cs" />
+    <Compile Include="Geography\GeographicRegion.cs" />
     <Compile Include="Geography\Interfaces\IGeographicsLocation.cs" />
     <Compile Include="CarRental\Interfaces\IClient.cs" />
     <Compile Include="CarRental\Interfaces\IRental.cs" />
@@ -142,7 +148,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="CarRental\CarFeatures\" />
     <Folder Include="CarRental\Cars\CarModels\" />
+    <Folder Include="CarRental\Gearboxes\" />
     <Folder Include="Dal\EF\" />
     <Folder Include="MassStoarage\MogileFs\" />
   </ItemGroup>
