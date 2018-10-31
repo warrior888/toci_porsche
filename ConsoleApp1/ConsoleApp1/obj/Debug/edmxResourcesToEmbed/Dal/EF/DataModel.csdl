@@ -1,17 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="carrentalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="car">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="mark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="model" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="vin" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="carfeaturemap" Relationship="Self.carfeaturemap_id_car_fkey" FromRole="car" ToRole="carfeaturemap" />
-    <NavigationProperty Name="rental" Relationship="Self.rental_id_car_fkey" FromRole="car" ToRole="rental" />
-  </EntityType>
+<Schema Namespace="CarrentalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
   <EntityType Name="carfeature">
     <Key>
       <PropertyRef Name="id" />
@@ -27,7 +15,6 @@
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="id_car" Type="Int32" Nullable="false" />
     <Property Name="id_carfeature" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="car" Relationship="Self.carfeaturemap_id_car_fkey" FromRole="carfeaturemap" ToRole="car" />
     <NavigationProperty Name="carfeature" Relationship="Self.carfeaturemap_id_carfeature_fkey" FromRole="carfeaturemap" ToRole="carfeature" />
   </EntityType>
   <EntityType Name="client">
@@ -65,10 +52,6 @@
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="id_rentaloption" Type="Int32" Nullable="false" />
-    <Property Name="startdate" Type="DateTime" Precision="6" />
-    <Property Name="enddate" Type="DateTime" Precision="6" />
-    <Property Name="id_car" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="car" Relationship="Self.rental_id_car_fkey" FromRole="rental" ToRole="car" />
     <NavigationProperty Name="rentaloption" Relationship="Self.rental_id_rentaloption_fkey" FromRole="rental" ToRole="rentaloption" />
   </EntityType>
   <EntityType Name="rentaloption">
@@ -84,37 +67,6 @@
     <NavigationProperty Name="client" Relationship="Self.rentaloption_id_client_fkey" FromRole="rentaloption" ToRole="client" />
     <NavigationProperty Name="rental" Relationship="Self.rental_id_rentaloption_fkey" FromRole="rentaloption" ToRole="rental" />
   </EntityType>
-  <EntityType Name="rentaloptions">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="kilometerlimit" Type="Decimal" Precision="19" Scale="4" />
-  </EntityType>
-  <Association Name="carfeaturemap_id_car_fkey">
-    <End Role="car" Type="Self.car" Multiplicity="1" />
-    <End Role="carfeaturemap" Type="Self.carfeaturemap" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="car">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="carfeaturemap">
-        <PropertyRef Name="id_car" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="rental_id_car_fkey">
-    <End Role="car" Type="Self.car" Multiplicity="1" />
-    <End Role="rental" Type="Self.rental" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="car">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="rental">
-        <PropertyRef Name="id_car" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="carfeaturemap_id_carfeature_fkey">
     <End Role="carfeature" Type="Self.carfeature" Multiplicity="1" />
     <End Role="carfeaturemap" Type="Self.carfeaturemap" Multiplicity="*" />
@@ -163,8 +115,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="carRentalEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="car" EntityType="Self.car" />
+  <EntityContainer Name="carrentalEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="carfeature" EntityType="Self.carfeature" />
     <EntitySet Name="carfeaturemap" EntityType="Self.carfeaturemap" />
     <EntitySet Name="client" EntityType="Self.client" />
@@ -172,15 +123,6 @@
     <EntitySet Name="driverslicensecategory" EntityType="Self.driverslicensecategory" />
     <EntitySet Name="rental" EntityType="Self.rental" />
     <EntitySet Name="rentaloption" EntityType="Self.rentaloption" />
-    <EntitySet Name="rentaloptions" EntityType="Self.rentaloptions" />
-    <AssociationSet Name="carfeaturemap_id_car_fkey" Association="Self.carfeaturemap_id_car_fkey">
-      <End Role="car" EntitySet="car" />
-      <End Role="carfeaturemap" EntitySet="carfeaturemap" />
-    </AssociationSet>
-    <AssociationSet Name="rental_id_car_fkey" Association="Self.rental_id_car_fkey">
-      <End Role="car" EntitySet="car" />
-      <End Role="rental" EntitySet="rental" />
-    </AssociationSet>
     <AssociationSet Name="carfeaturemap_id_carfeature_fkey" Association="Self.carfeaturemap_id_carfeature_fkey">
       <End Role="carfeature" EntitySet="carfeature" />
       <End Role="carfeaturemap" EntitySet="carfeaturemap" />

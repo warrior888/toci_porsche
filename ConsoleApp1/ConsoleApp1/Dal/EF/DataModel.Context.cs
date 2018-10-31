@@ -13,10 +13,10 @@ namespace Toci.CarRental.Dal.EF
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class carRentalEntities : DbContext
+    public partial class carrentalEntities : DbContext
     {
-        public carRentalEntities()
-            : base("name=carRentalEntities")
+        public carrentalEntities()
+            : base("name=carrentalEntities")
         {
         }
     
@@ -25,7 +25,6 @@ namespace Toci.CarRental.Dal.EF
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<car> car { get; set; }
         public virtual DbSet<carfeature> carfeature { get; set; }
         public virtual DbSet<carfeaturemap> carfeaturemap { get; set; }
         public virtual DbSet<client> client { get; set; }
@@ -33,6 +32,5 @@ namespace Toci.CarRental.Dal.EF
         public virtual DbSet<driverslicensecategory> driverslicensecategory { get; set; }
         public virtual DbSet<rental> rental { get; set; }
         public virtual DbSet<rentaloption> rentaloption { get; set; }
-        public virtual DbSet<rentaloptions> rentaloptions { get; set; }
     }
 }

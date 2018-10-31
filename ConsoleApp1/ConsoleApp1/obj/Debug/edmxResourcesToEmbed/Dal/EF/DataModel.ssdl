@@ -1,15 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Schema Namespace="carrentalModel.Store" Provider="Npgsql" ProviderManifestToken="11.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <EntityType Name="car">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="mark" Type="text" />
-    <Property Name="model" Type="text" />
-    <Property Name="vin" Type="text" />
-    <Property Name="color" Type="text" />
-  </EntityType>
+<Schema Namespace="CarrentalModel.Store" Provider="Npgsql" ProviderManifestToken="11.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
   <EntityType Name="carfeature">
     <Key>
       <PropertyRef Name="id" />
@@ -57,9 +47,6 @@
     </Key>
     <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="id_rentaloption" Type="int4" Nullable="false" />
-    <Property Name="startdate" Type="timestamp" />
-    <Property Name="enddate" Type="timestamp" />
-    <Property Name="id_car" Type="int4" Nullable="false" />
   </EntityType>
   <EntityType Name="rentaloption">
     <Key>
@@ -72,25 +59,6 @@
     <Property Name="startdate" Type="timestamp" />
     <Property Name="id_client" Type="int4" Nullable="false" />
   </EntityType>
-  <EntityType Name="rentaloptions">
-    <Key>
-      <PropertyRef Name="id" />
-    </Key>
-    <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="kilometerlimit" Type="numeric" Precision="19" Scale="4" />
-  </EntityType>
-  <Association Name="carfeaturemap_id_car_fkey">
-    <End Role="car" Type="Self.car" Multiplicity="1" />
-    <End Role="carfeaturemap" Type="Self.carfeaturemap" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="car">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="carfeaturemap">
-        <PropertyRef Name="id_car" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <Association Name="carfeaturemap_id_carfeature_fkey">
     <End Role="carfeature" Type="Self.carfeature" Multiplicity="1" />
     <End Role="carfeaturemap" Type="Self.carfeaturemap" Multiplicity="*" />
@@ -112,18 +80,6 @@
       </Principal>
       <Dependent Role="driverslicense">
         <PropertyRef Name="id_driverslicensecategory" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="rental_id_car_fkey">
-    <End Role="car" Type="Self.car" Multiplicity="1" />
-    <End Role="rental" Type="Self.rental" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="car">
-        <PropertyRef Name="id" />
-      </Principal>
-      <Dependent Role="rental">
-        <PropertyRef Name="id_car" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -151,8 +107,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="carrentalModelStoreContainer">
-    <EntitySet Name="car" EntityType="Self.car" Schema="public" store:Type="Tables" />
+  <EntityContainer Name="CarrentalModelStoreContainer">
     <EntitySet Name="carfeature" EntityType="Self.carfeature" Schema="public" store:Type="Tables" />
     <EntitySet Name="carfeaturemap" EntityType="Self.carfeaturemap" Schema="public" store:Type="Tables" />
     <EntitySet Name="client" EntityType="Self.client" Schema="public" store:Type="Tables" />
@@ -160,11 +115,6 @@
     <EntitySet Name="driverslicensecategory" EntityType="Self.driverslicensecategory" Schema="public" store:Type="Tables" />
     <EntitySet Name="rental" EntityType="Self.rental" Schema="public" store:Type="Tables" />
     <EntitySet Name="rentaloption" EntityType="Self.rentaloption" Schema="public" store:Type="Tables" />
-    <EntitySet Name="rentaloptions" EntityType="Self.rentaloptions" Schema="public" store:Type="Tables" />
-    <AssociationSet Name="carfeaturemap_id_car_fkey" Association="Self.carfeaturemap_id_car_fkey">
-      <End Role="car" EntitySet="car" />
-      <End Role="carfeaturemap" EntitySet="carfeaturemap" />
-    </AssociationSet>
     <AssociationSet Name="carfeaturemap_id_carfeature_fkey" Association="Self.carfeaturemap_id_carfeature_fkey">
       <End Role="carfeature" EntitySet="carfeature" />
       <End Role="carfeaturemap" EntitySet="carfeaturemap" />
@@ -172,10 +122,6 @@
     <AssociationSet Name="driverslicense_id_driverslicensecategory_fkey" Association="Self.driverslicense_id_driverslicensecategory_fkey">
       <End Role="driverslicensecategory" EntitySet="driverslicensecategory" />
       <End Role="driverslicense" EntitySet="driverslicense" />
-    </AssociationSet>
-    <AssociationSet Name="rental_id_car_fkey" Association="Self.rental_id_car_fkey">
-      <End Role="car" EntitySet="car" />
-      <End Role="rental" EntitySet="rental" />
     </AssociationSet>
     <AssociationSet Name="rental_id_rentaloption_fkey" Association="Self.rental_id_rentaloption_fkey">
       <End Role="rentaloption" EntitySet="rentaloption" />

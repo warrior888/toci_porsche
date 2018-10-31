@@ -10,6 +10,7 @@ drop table CarFeature;
 drop table Car;
 
 
+
 create table Car 
 (
 	id serial primary key,

@@ -16,11 +16,7 @@ namespace Toci.CarRental.Dal.EF
     {
         public int id { get; set; }
         public int id_rentaloption { get; set; }
-        public Nullable<System.DateTime> startdate { get; set; }
-        public Nullable<System.DateTime> enddate { get; set; }
-        public int id_car { get; set; }
     
-        public virtual car car { get; set; }
         public virtual rentaloption rentaloption { get; set; }
     }
 }

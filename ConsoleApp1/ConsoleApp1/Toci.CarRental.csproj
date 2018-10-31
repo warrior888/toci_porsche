@@ -116,9 +116,6 @@
     <Compile Include="CarRental\Office\Interfaces\ICarRentalOffice.cs" />
     <Compile Include="CarRental\Rental.cs" />
     <Compile Include="CarRental\RentalOptions.cs" />
-    <Compile Include="Dal\EF\car.cs">
-      <DependentUpon>DataModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Dal\EF\carfeature.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
@@ -153,9 +150,6 @@
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Dal\EF\rentaloption.cs">
-      <DependentUpon>DataModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Dal\EF\rentaloptions.cs">
       <DependentUpon>DataModel.tt</DependentUpon>
     </Compile>
     <Compile Include="GenericList\Lista.cs" />
