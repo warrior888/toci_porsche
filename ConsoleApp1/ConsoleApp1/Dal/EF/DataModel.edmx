@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="carrentalModel.Store" Provider="Npgsql" ProviderManifestToken="11.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="car">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="mark" Type="text" />
+          <Property Name="model" Type="text" />
+          <Property Name="vin" Type="text" />
+          <Property Name="color" Type="text" />
+        </EntityType>
+        <EntityType Name="carfeature">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="feature" Type="text" />
+        </EntityType>
+        <EntityType Name="carfeaturemap">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_car" Type="int4" Nullable="false" />
+          <Property Name="id_carfeature" Type="int4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="client">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="text" />
+          <Property Name="surname" Type="text" />
+          <Property Name="nationalid" Type="text" />
+          <Property Name="birthdate" Type="timestamp" />
+        </EntityType>
+        <EntityType Name="driverslicense">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="licensenumber" Type="text" />
+          <Property Name="issuedate" Type="timestamp" />
+          <Property Name="id_driverslicensecategory" Type="int4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="driverslicensecategory">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="text" />
+        </EntityType>
+        <EntityType Name="rental">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="id_rentaloption" Type="int4" Nullable="false" />
+          <Property Name="startdate" Type="timestamp" />
+          <Property Name="enddate" Type="timestamp" />
+          <Property Name="id_car" Type="int4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="rentaloption">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kilometerlimit" Type="numeric" Precision="19" Scale="4" />
+          <Property Name="price" Type="numeric" Precision="19" Scale="4" />
+          <Property Name="rentalinterval" Type="int4" />
+          <Property Name="startdate" Type="timestamp" />
+          <Property Name="id_client" Type="int4" Nullable="false" />
+        </EntityType>
+        <EntityType Name="rentaloptions">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int4" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="kilometerlimit" Type="numeric" Precision="19" Scale="4" />
+        </EntityType>
+        <Association Name="carfeaturemap_id_car_fkey">
+          <End Role="car" Type="Self.car" Multiplicity="1" />
+          <End Role="carfeaturemap" Type="Self.carfeaturemap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="car">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="carfeaturemap">
+              <PropertyRef Name="id_car" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="carfeaturemap_id_carfeature_fkey">
+          <End Role="carfeature" Type="Self.carfeature" Multiplicity="1" />
+          <End Role="carfeaturemap" Type="Self.carfeaturemap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="carfeature">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="carfeaturemap">
+              <PropertyRef Name="id_carfeature" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="driverslicense_id_driverslicensecategory_fkey">
+          <End Role="driverslicensecategory" Type="Self.driverslicensecategory" Multiplicity="1" />
+          <End Role="driverslicense" Type="Self.driverslicense" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="driverslicensecategory">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="driverslicense">
+              <PropertyRef Name="id_driverslicensecategory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="rental_id_car_fkey">
+          <End Role="car" Type="Self.car" Multiplicity="1" />
+          <End Role="rental" Type="Self.rental" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="car">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="rental">
+              <PropertyRef Name="id_car" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="rental_id_rentaloption_fkey">
+          <End Role="rentaloption" Type="Self.rentaloption" Multiplicity="1" />
+          <End Role="rental" Type="Self.rental" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="rentaloption">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="rental">
+              <PropertyRef Name="id_rentaloption" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="rentaloption_id_client_fkey">
+          <End Role="client" Type="Self.client" Multiplicity="1" />
+          <End Role="rentaloption" Type="Self.rentaloption" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="client">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="rentaloption">
+              <PropertyRef Name="id_client" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="carrentalModelStoreContainer">
+          <EntitySet Name="car" EntityType="Self.car" Schema="public" store:Type="Tables" />
+          <EntitySet Name="carfeature" EntityType="Self.carfeature" Schema="public" store:Type="Tables" />
+          <EntitySet Name="carfeaturemap" EntityType="Self.carfeaturemap" Schema="public" store:Type="Tables" />
+          <EntitySet Name="client" EntityType="Self.client" Schema="public" store:Type="Tables" />
+          <EntitySet Name="driverslicense" EntityType="Self.driverslicense" Schema="public" store:Type="Tables" />
+          <EntitySet Name="driverslicensecategory" EntityType="Self.driverslicensecategory" Schema="public" store:Type="Tables" />
+          <EntitySet Name="rental" EntityType="Self.rental" Schema="public" store:Type="Tables" />
+          <EntitySet Name="rentaloption" EntityType="Self.rentaloption" Schema="public" store:Type="Tables" />
+          <EntitySet Name="rentaloptions" EntityType="Self.rentaloptions" Schema="public" store:Type="Tables" />
+          <AssociationSet Name="carfeaturemap_id_car_fkey" Association="Self.carfeaturemap_id_car_fkey">
+            <End Role="car" EntitySet="car" />
+            <End Role="carfeaturemap" EntitySet="carfeaturemap" />
+          </AssociationSet>
+          <AssociationSet Name="carfeaturemap_id_carfeature_fkey" Association="Self.carfeaturemap_id_carfeature_fkey">
+            <End Role="carfeature" EntitySet="carfeature" />
+            <End Role="carfeaturemap" EntitySet="carfeaturemap" />
+          </AssociationSet>
+          <AssociationSet Name="driverslicense_id_driverslicensecategory_fkey" Association="Self.driverslicense_id_driverslicensecategory_fkey">
+            <End Role="driverslicensecategory" EntitySet="driverslicensecategory" />
+            <End Role="driverslicense" EntitySet="driverslicense" />
+          </AssociationSet>
+          <AssociationSet Name="rental_id_car_fkey" Association="Self.rental_id_car_fkey">
+            <End Role="car" EntitySet="car" />
+            <End Role="rental" EntitySet="rental" />
+          </AssociationSet>
+          <AssociationSet Name="rental_id_rentaloption_fkey" Association="Self.rental_id_rentaloption_fkey">
+            <End Role="rentaloption" EntitySet="rentaloption" />
+            <End Role="rental" EntitySet="rental" />
+          </AssociationSet>
+          <AssociationSet Name="rentaloption_id_client_fkey" Association="Self.rentaloption_id_client_fkey">
+            <End Role="client" EntitySet="client" />
+            <End Role="rentaloption" EntitySet="rentaloption" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="carrentalModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="car">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="mark" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="model" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="vin" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="color" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="carfeaturemap" Relationship="Self.carfeaturemap_id_car_fkey" FromRole="car" ToRole="carfeaturemap" />
+          <NavigationProperty Name="rental" Relationship="Self.rental_id_car_fkey" FromRole="car" ToRole="rental" />
+        </EntityType>
+        <EntityType Name="carfeature">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="feature" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="carfeaturemap" Relationship="Self.carfeaturemap_id_carfeature_fkey" FromRole="carfeature" ToRole="carfeaturemap" />
+        </EntityType>
+        <EntityType Name="carfeaturemap">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_car" Type="Int32" Nullable="false" />
+          <Property Name="id_carfeature" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="car" Relationship="Self.carfeaturemap_id_car_fkey" FromRole="carfeaturemap" ToRole="car" />
+          <NavigationProperty Name="carfeature" Relationship="Self.carfeaturemap_id_carfeature_fkey" FromRole="carfeaturemap" ToRole="carfeature" />
+        </EntityType>
+        <EntityType Name="client">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="surname" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="nationalid" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="birthdate" Type="DateTime" Precision="6" />
+          <NavigationProperty Name="rentaloption" Relationship="Self.rentaloption_id_client_fkey" FromRole="client" ToRole="rentaloption" />
+        </EntityType>
+        <EntityType Name="driverslicense">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="licensenumber" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="issuedate" Type="DateTime" Precision="6" />
+          <Property Name="id_driverslicensecategory" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="driverslicensecategory" Relationship="Self.driverslicense_id_driverslicensecategory_fkey" FromRole="driverslicense" ToRole="driverslicensecategory" />
+        </EntityType>
+        <EntityType Name="driverslicensecategory">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="driverslicense" Relationship="Self.driverslicense_id_driverslicensecategory_fkey" FromRole="driverslicensecategory" ToRole="driverslicense" />
+        </EntityType>
+        <EntityType Name="rental">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="id_rentaloption" Type="Int32" Nullable="false" />
+          <Property Name="startdate" Type="DateTime" Precision="6" />
+          <Property Name="enddate" Type="DateTime" Precision="6" />
+          <Property Name="id_car" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="car" Relationship="Self.rental_id_car_fkey" FromRole="rental" ToRole="car" />
+          <NavigationProperty Name="rentaloption" Relationship="Self.rental_id_rentaloption_fkey" FromRole="rental" ToRole="rentaloption" />
+        </EntityType>
+        <EntityType Name="rentaloption">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kilometerlimit" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="price" Type="Decimal" Precision="19" Scale="4" />
+          <Property Name="rentalinterval" Type="Int32" />
+          <Property Name="startdate" Type="DateTime" Precision="6" />
+          <Property Name="id_client" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="client" Relationship="Self.rentaloption_id_client_fkey" FromRole="rentaloption" ToRole="client" />
+          <NavigationProperty Name="rental" Relationship="Self.rental_id_rentaloption_fkey" FromRole="rentaloption" ToRole="rental" />
+        </EntityType>
+        <EntityType Name="rentaloptions">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="kilometerlimit" Type="Decimal" Precision="19" Scale="4" />
+        </EntityType>
+        <Association Name="carfeaturemap_id_car_fkey">
+          <End Role="car" Type="Self.car" Multiplicity="1" />
+          <End Role="carfeaturemap" Type="Self.carfeaturemap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="car">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="carfeaturemap">
+              <PropertyRef Name="id_car" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="rental_id_car_fkey">
+          <End Role="car" Type="Self.car" Multiplicity="1" />
+          <End Role="rental" Type="Self.rental" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="car">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="rental">
+              <PropertyRef Name="id_car" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="carfeaturemap_id_carfeature_fkey">
+          <End Role="carfeature" Type="Self.carfeature" Multiplicity="1" />
+          <End Role="carfeaturemap" Type="Self.carfeaturemap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="carfeature">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="carfeaturemap">
+              <PropertyRef Name="id_carfeature" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="rentaloption_id_client_fkey">
+          <End Role="client" Type="Self.client" Multiplicity="1" />
+          <End Role="rentaloption" Type="Self.rentaloption" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="client">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="rentaloption">
+              <PropertyRef Name="id_client" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="driverslicense_id_driverslicensecategory_fkey">
+          <End Role="driverslicensecategory" Type="Self.driverslicensecategory" Multiplicity="1" />
+          <End Role="driverslicense" Type="Self.driverslicense" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="driverslicensecategory">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="driverslicense">
+              <PropertyRef Name="id_driverslicensecategory" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="rental_id_rentaloption_fkey">
+          <End Role="rentaloption" Type="Self.rentaloption" Multiplicity="1" />
+          <End Role="rental" Type="Self.rental" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="rentaloption">
+              <PropertyRef Name="id" />
+            </Principal>
+            <Dependent Role="rental">
+              <PropertyRef Name="id_rentaloption" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="carRentalEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="car" EntityType="Self.car" />
+          <EntitySet Name="carfeature" EntityType="Self.carfeature" />
+          <EntitySet Name="carfeaturemap" EntityType="Self.carfeaturemap" />
+          <EntitySet Name="client" EntityType="Self.client" />
+          <EntitySet Name="driverslicense" EntityType="Self.driverslicense" />
+          <EntitySet Name="driverslicensecategory" EntityType="Self.driverslicensecategory" />
+          <EntitySet Name="rental" EntityType="Self.rental" />
+          <EntitySet Name="rentaloption" EntityType="Self.rentaloption" />
+          <EntitySet Name="rentaloptions" EntityType="Self.rentaloptions" />
+          <AssociationSet Name="carfeaturemap_id_car_fkey" Association="Self.carfeaturemap_id_car_fkey">
+            <End Role="car" EntitySet="car" />
+            <End Role="carfeaturemap" EntitySet="carfeaturemap" />
+          </AssociationSet>
+          <AssociationSet Name="rental_id_car_fkey" Association="Self.rental_id_car_fkey">
+            <End Role="car" EntitySet="car" />
+            <End Role="rental" EntitySet="rental" />
+          </AssociationSet>
+          <AssociationSet Name="carfeaturemap_id_carfeature_fkey" Association="Self.carfeaturemap_id_carfeature_fkey">
+            <End Role="carfeature" EntitySet="carfeature" />
+            <End Role="carfeaturemap" EntitySet="carfeaturemap" />
+          </AssociationSet>
+          <AssociationSet Name="rentaloption_id_client_fkey" Association="Self.rentaloption_id_client_fkey">
+            <End Role="client" EntitySet="client" />
+            <End Role="rentaloption" EntitySet="rentaloption" />
+          </AssociationSet>
+          <AssociationSet Name="driverslicense_id_driverslicensecategory_fkey" Association="Self.driverslicense_id_driverslicensecategory_fkey">
+            <End Role="driverslicensecategory" EntitySet="driverslicensecategory" />
+            <End Role="driverslicense" EntitySet="driverslicense" />
+          </AssociationSet>
+          <AssociationSet Name="rental_id_rentaloption_fkey" Association="Self.rental_id_rentaloption_fkey">
+            <End Role="rentaloption" EntitySet="rentaloption" />
+            <End Role="rental" EntitySet="rental" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="carrentalModelStoreContainer" CdmEntityContainer="carRentalEntities">
+          <EntitySetMapping Name="car">
+            <EntityTypeMapping TypeName="carrentalModel.car">
+              <MappingFragment StoreEntitySet="car">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="mark" ColumnName="mark" />
+                <ScalarProperty Name="model" ColumnName="model" />
+                <ScalarProperty Name="vin" ColumnName="vin" />
+                <ScalarProperty Name="color" ColumnName="color" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="carfeature">
+            <EntityTypeMapping TypeName="carrentalModel.carfeature">
+              <MappingFragment StoreEntitySet="carfeature">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="feature" ColumnName="feature" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="carfeaturemap">
+            <EntityTypeMapping TypeName="carrentalModel.carfeaturemap">
+              <MappingFragment StoreEntitySet="carfeaturemap">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="id_car" ColumnName="id_car" />
+                <ScalarProperty Name="id_carfeature" ColumnName="id_carfeature" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="client">
+            <EntityTypeMapping TypeName="carrentalModel.client">
+              <MappingFragment StoreEntitySet="client">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="surname" ColumnName="surname" />
+                <ScalarProperty Name="nationalid" ColumnName="nationalid" />
+                <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="driverslicense">
+            <EntityTypeMapping TypeName="carrentalModel.driverslicense">
+              <MappingFragment StoreEntitySet="driverslicense">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="licensenumber" ColumnName="licensenumber" />
+                <ScalarProperty Name="issuedate" ColumnName="issuedate" />
+                <ScalarProperty Name="id_driverslicensecategory" ColumnName="id_driverslicensecategory" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="driverslicensecategory">
+            <EntityTypeMapping TypeName="carrentalModel.driverslicensecategory">
+              <MappingFragment StoreEntitySet="driverslicensecategory">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="rental">
+            <EntityTypeMapping TypeName="carrentalModel.rental">
+              <MappingFragment StoreEntitySet="rental">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="id_rentaloption" ColumnName="id_rentaloption" />
+                <ScalarProperty Name="startdate" ColumnName="startdate" />
+                <ScalarProperty Name="enddate" ColumnName="enddate" />
+                <ScalarProperty Name="id_car" ColumnName="id_car" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="rentaloption">
+            <EntityTypeMapping TypeName="carrentalModel.rentaloption">
+              <MappingFragment StoreEntitySet="rentaloption">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="kilometerlimit" ColumnName="kilometerlimit" />
+                <ScalarProperty Name="price" ColumnName="price" />
+                <ScalarProperty Name="rentalinterval" ColumnName="rentalinterval" />
+                <ScalarProperty Name="startdate" ColumnName="startdate" />
+                <ScalarProperty Name="id_client" ColumnName="id_client" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="rentaloptions">
+            <EntityTypeMapping TypeName="carrentalModel.rentaloptions">
+              <MappingFragment StoreEntitySet="rentaloptions">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="kilometerlimit" ColumnName="kilometerlimit" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

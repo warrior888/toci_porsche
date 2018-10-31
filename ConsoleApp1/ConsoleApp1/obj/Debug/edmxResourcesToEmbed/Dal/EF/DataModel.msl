@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="carrentalModelStoreContainer" CdmEntityContainer="carRentalEntities">
+    <EntitySetMapping Name="car">
+      <EntityTypeMapping TypeName="carrentalModel.car">
+        <MappingFragment StoreEntitySet="car">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="mark" ColumnName="mark" />
+          <ScalarProperty Name="model" ColumnName="model" />
+          <ScalarProperty Name="vin" ColumnName="vin" />
+          <ScalarProperty Name="color" ColumnName="color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="carfeature">
+      <EntityTypeMapping TypeName="carrentalModel.carfeature">
+        <MappingFragment StoreEntitySet="carfeature">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="feature" ColumnName="feature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="carfeaturemap">
+      <EntityTypeMapping TypeName="carrentalModel.carfeaturemap">
+        <MappingFragment StoreEntitySet="carfeaturemap">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_car" ColumnName="id_car" />
+          <ScalarProperty Name="id_carfeature" ColumnName="id_carfeature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="client">
+      <EntityTypeMapping TypeName="carrentalModel.client">
+        <MappingFragment StoreEntitySet="client">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="surname" ColumnName="surname" />
+          <ScalarProperty Name="nationalid" ColumnName="nationalid" />
+          <ScalarProperty Name="birthdate" ColumnName="birthdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="driverslicense">
+      <EntityTypeMapping TypeName="carrentalModel.driverslicense">
+        <MappingFragment StoreEntitySet="driverslicense">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="licensenumber" ColumnName="licensenumber" />
+          <ScalarProperty Name="issuedate" ColumnName="issuedate" />
+          <ScalarProperty Name="id_driverslicensecategory" ColumnName="id_driverslicensecategory" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="driverslicensecategory">
+      <EntityTypeMapping TypeName="carrentalModel.driverslicensecategory">
+        <MappingFragment StoreEntitySet="driverslicensecategory">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rental">
+      <EntityTypeMapping TypeName="carrentalModel.rental">
+        <MappingFragment StoreEntitySet="rental">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="id_rentaloption" ColumnName="id_rentaloption" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="enddate" ColumnName="enddate" />
+          <ScalarProperty Name="id_car" ColumnName="id_car" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rentaloption">
+      <EntityTypeMapping TypeName="carrentalModel.rentaloption">
+        <MappingFragment StoreEntitySet="rentaloption">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kilometerlimit" ColumnName="kilometerlimit" />
+          <ScalarProperty Name="price" ColumnName="price" />
+          <ScalarProperty Name="rentalinterval" ColumnName="rentalinterval" />
+          <ScalarProperty Name="startdate" ColumnName="startdate" />
+          <ScalarProperty Name="id_client" ColumnName="id_client" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="rentaloptions">
+      <EntityTypeMapping TypeName="carrentalModel.rentaloptions">
+        <MappingFragment StoreEntitySet="rentaloptions">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="kilometerlimit" ColumnName="kilometerlimit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
