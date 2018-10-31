@@ -14,17 +14,21 @@ namespace Toci.WinForms.CarRental.Fun
 {
     public partial class Form1 : Form
     {
-       // DataModel
+        // DataModel
+        carrentalEntities ent = new carrentalEntities();
+        
         DbSet<driverslicensecategory> licences;//= DbSet<driverslicensecategory>();// DbSet<driverslicensecategory>();
         int topVariable = 20;
 
         public Form1()
         {
+            ICollection<string> lic  = ent.driverslicensecategory.Select(x => x.name.ToString()).ToList();
             InitializeComponent();
-            ICollection<string> lic = licences.Select(x => x.name.ToString()).ToList();
+
             foreach (var item in lic)
             {
-                AddButton(item, topVariable, 20);
+                Button b = AddButton(item, topVariable, 20);
+                this.Controls.Add(b);
                 topVariable += 20;
             }
         }
