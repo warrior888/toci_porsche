@@ -23,7 +23,7 @@ namespace ConsoleApp1
            
             var result = cro.AvailableCars(new RentalOptions() {Client = new Client(){} , KilometerLimit = 3999, Price = 3000, RentalIntarval = 5, StartDate = new DateTime(2018, 7, 7)});
 
-
+            
             //IVehicle<IEngine, IGearbox, ICarFeatures> auto = new Car();
 
             IVehicle<IEngine, IGearbox, ICarFeatures> auto = new Car<IOilEngine, IGearbox, ICarFeatures>();
