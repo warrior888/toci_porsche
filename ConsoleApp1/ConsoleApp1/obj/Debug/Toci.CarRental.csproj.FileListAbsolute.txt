@@ -74,3 +74,13 @@ C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Grpc.Core.xml
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Interactive.Async.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Google.Api.Gax.Rest.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Google.Apis.Storage.v1.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Google.Cloud.Storage.V1.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Google.Api.Gax.Rest.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Google.Api.Gax.Rest.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Google.Apis.Auth.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Google.Apis.Storage.v1.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Google.Apis.Storage.v1.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Google.Cloud.Storage.V1.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Google.Cloud.Storage.V1.xml

@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Text;
 using ConsoleApp1.VoiceRecognition.Interfaces;
 using Google.Cloud.Speech.V1;
@@ -11,13 +12,35 @@ namespace ConsoleApp1.VoiceRecognition
     {
         public string Recognize(byte[] stream)
         {
-            MemoryStream output = new MemoryStream();
-            CodedOutputStream cos = new CodedOutputStream(output);
-            RecognitionAudio rr =  Google.Cloud.Speech.V1.RecognitionAudio.FromBytes(stream);
-           // rr.Content
-            return cos.ToString();
+            try
+            {
+                var speech = SpeechClient.Create();
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+            }
+            
+            /*var response = speech.Recognize(new RecognitionConfig()
+            {
+                Encoding = RecognitionConfig.Types.AudioEncoding.Linear16,
+                SampleRateHertz = 16000,
+                LanguageCode = "pl",
+            }, RecognitionAudio.FromBytes(stream));
 
-           // return Encoding.UTF8.GetString(r.Content.ToByteArray());
+            string resultMsg = string.Empty;
+
+            foreach (var result in response.Results)
+            {
+                foreach (var alternative in result.Alternatives)
+                {
+                    resultMsg += (alternative.Transcript);
+                }
+            }
+            */
+
+
+            return "";//resultMsg;
         }
     }
 }
