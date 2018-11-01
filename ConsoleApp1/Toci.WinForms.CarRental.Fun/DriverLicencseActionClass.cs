@@ -9,5 +9,10 @@ namespace Toci.WinForms.CarRental.Fun
             base.AddButtons();
             Debug.WriteLine("Jestesmy zoveridowani");
         }
+
+        public void TegoNieUruchomimy()
+        {
+
+        }
     }
 }
