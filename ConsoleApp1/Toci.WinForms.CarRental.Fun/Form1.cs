@@ -25,6 +25,8 @@ namespace Toci.WinForms.CarRental.Fun
     {
         System.Speech.Recognition.SpeechRecognitionEngine engine = new SpeechRecognitionEngine();
         private RecognitionResult res;
+
+        private VoiceRecognizer wr;
         // DataModel
         carrentalEntities ent = new carrentalEntities();
         
@@ -69,13 +71,13 @@ namespace Toci.WinForms.CarRental.Fun
 
         private void Engine_RecognizeCompleted(object sender, SpeechRecognizedEventArgs e)
         {
-            VoiceRecognizer wr = new VoiceRecognizer();
+            wr = new VoiceRecognizer();
 
             FieldInfo f = e.Result.Audio.GetType().GetField("_rawAudioData", BindingFlags.Instance | BindingFlags.NonPublic);
 
             string message = wr.Recognize((byte[])f.GetValue(e.Result.Audio));
 
-            button1.Text = message;
+            richTextBox1.Text += " " + message;
         }
 
         private void button2_Click(object sender, EventArgs e)

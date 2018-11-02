@@ -308,6 +308,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="bin\Debug\tocicarrental.json" />
     <None Include="Help\BassNet.chm" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

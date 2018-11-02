@@ -127,7 +127,6 @@ C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\bin\x
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\obj\x86\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\obj\x86\Debug\UnitTestApp.g.i.cs
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\obj\x86\Debug\UnitTestApp.g.cs
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\obj\x86\Debug\XamlTypeInfo.g.cs
@@ -223,3 +222,4 @@ C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\obj\x
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\obj\x86\Debug\resources.en.resfiles
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\obj\x86\Debug\resources.en.resfiles.intermediate
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\UnitTestProject1\obj\x86\Debug\UnitTestProject1.csprojResolveAssemblyReference.cache

@@ -27,7 +27,6 @@ C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.xml
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.pdb
-C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\Toci.CarRental.csprojResolveAssemblyReference.cache
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\Toci.CarRental.dll
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\Toci.CarRental.pdb
 C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\grpc_csharp_ext.x86.dll
