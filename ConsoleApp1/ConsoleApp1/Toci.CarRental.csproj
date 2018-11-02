@@ -253,11 +253,15 @@
     <Compile Include="Insurance\Interfaces\IInsuranceAccidentPlus.cs" />
     <Compile Include="Interfaces\IDbAccess.cs" />
     <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="MassStoarage\FileStoreData.cs" />
+    <Compile Include="MassStoarage\Interfaces\IStoreData.cs" />
+    <Compile Include="MassStoarage\StoreDataBase.cs" />
     <Compile Include="PaymentIntegration\Interfaces\IPayPalPayment.cs" />
     <Compile Include="PaymentIntegration\Payment.cs" />
     <Compile Include="PaymentIntegration\TociPayPal\PayPalPayment.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sharding\Cluster.cs" />
     <Compile Include="Sharding\ICluster.cs" />
     <Compile Include="Sharding\IShardingStrategy.cs" />
     <Compile Include="Sharding\ModuloSharding.cs" />
@@ -280,7 +284,6 @@
     <Folder Include="CarRental\CarFeatures\" />
     <Folder Include="CarRental\Cars\CarModels\" />
     <Folder Include="CarRental\Gearboxes\" />
-    <Folder Include="MassStoarage\MogileFs\" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

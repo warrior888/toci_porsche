@@ -2,12 +2,12 @@
 
 namespace ConsoleApp1.Sharding
 {
-    public interface IShardingStrategy
+    public interface IShardingStrategy<TClusterId>
     {
         int NumberOfClusters { get; set; }
 
-        List<ICluster> Clusters { get; set; }
+        List<ICluster<TClusterId>> Clusters { get; set; }
 
-        ICluster ChooseCluster(long dataId);
+        ICluster<TClusterId> ChooseCluster(long dataId);
     }
 }
