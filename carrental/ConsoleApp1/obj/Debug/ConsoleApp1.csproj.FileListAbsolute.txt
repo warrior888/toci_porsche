@@ -1,0 +1,131 @@
+c:\users\warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+c:\users\warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+c:\users\warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+c:\users\warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+c:\users\warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.dll
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.xml
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.dll
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.dll
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.pdb
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.xml
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.xml
+C:\Users\Warrior\documents\visual studio 2017\Projects\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.dll
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.dll
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.dll
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.xml
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.pdb
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.xml
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.xml
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\PayPal.dll
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\PayPal.xml
+C:\Users\Warrior\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\PayPal.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.xml
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.xml
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\PayPal.xml
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.xml
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojAssemblyReference.cache
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Abstractions.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Maps.Abstractions.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.dll
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Abstractions.pdb
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Maps.Abstractions.pdb
+C:\Users\Michał\Desktop\Repozytorium\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.pdb
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Abstractions.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Maps.Abstractions.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\PayPal.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.dll
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.xml
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.xml
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Abstractions.pdb
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Maps.Abstractions.pdb
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\PayPal.xml
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.xml
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.pdb
+C:\Users\warrior\Documents\tociporsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Abstractions.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Maps.Abstractions.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\PayPal.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Abstractions.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Ofl.Google.Maps.Abstractions.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\PayPal.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\System.ValueTuple.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Velyo.Google.Client.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework6.Npgsql.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.dll
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\EntityFramework6.Npgsql.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.pdb
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\bin\Debug\Npgsql.xml
+C:\Users\Administrator\Documents\toci_porsche\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache

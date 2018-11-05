@@ -1,17 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using ConsoleApp1.CarRental;
-using ConsoleApp1.CarRental.CarRentalGallery;
-using ConsoleApp1.CarRental.Cars;
-using ConsoleApp1.CarRental.Engines;
-using ConsoleApp1.CarRental.Interfaces;
-using ConsoleApp1.CarRental.Interfaces.CarOptions;
-using ConsoleApp1.CarRental.Office;
-using ConsoleApp1.Dal.Attributes;
-//using ConsoleApp1.Dal.PostgreSql;
-using ConsoleApp1.GenericList;
-using ConsoleApp1.Insurance;
-using ConsoleApp1.Interfaces;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
@@ -19,121 +10,79 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            CarRentalOffice cro = new CarRentalOffice();
-           
-            var result = cro.AvailableCars(new RentalOptions() {Client = new Client(){} , KilometerLimit = 3999, Price = 3000, RentalIntarval = 5, StartDate = new DateTime(2018, 7, 7)});
+            // tu jest dowolne slowo
+            // zmienna
+            int liczba = 8; // od uytk, z b d itd
+            int dzielnik = 2;
 
-            
-            //IVehicle<IEngine, IGearbox, ICarFeatures> auto = new Car();
+            int wynik = liczba / dzielnik;
+            Console.Write(wynik);
 
-            IVehicle<IEngine, IGearbox, ICarFeatures> auto = new Car<IOilEngine, IGearbox, ICarFeatures>();
-            //auto.CarFeatures.Mark
-            int dzielna = 5;
+            bool trueistrue = true;
 
+            // + - = / * ++ -- && || | & ? ! ?== == ^ < > <= >= 
 
-            string powitanie = "Witam  was drodzy porszakowcy";
-
-            char znaczek = 'c';
-
-            double dzielnik = 4.5;
-
-            bool prawdaczyfalsz = false;
-
-            double wynik = dzielna / dzielnik; // ==
-
-            // + - * / = == && || ^ ? ? | ! & | < > <= >= () [] {} . ++ -- ,
-
-            // 2 + 2 * 2 = 6
-
-            int xor = 5 ^ 2;
+            string[] programisci = {"bartek", "edek", "viewer"};
 
 
-            bool logicznyprzyklad = 7 > 9 && 8 < 9; // flase true
-
-
-            //Dictionary<string, IVehicle<string, string> > djafkds = new Dictionary<string, IVehicle<string, string>>();
-            //Dictionary<string, IGearbox> fbdfd = new Dictionary<string, IGearbox>();
-
-            int zwrotka;
-            List<int> osobyStarszeLista = new List<int>(); //tworzymy liste intów ktora bedzie przechowywac wynik metody z Klasy Lista osobyStarszeNiz15() - metoda zwraca liste intów
-            //dlatego mozemy sobie przypisac do innej listy (typy sie zgadzaja)
-
-            Lista wiek=new Lista();
-            wiek.DodajWiek();
-            wiek.DodajWiek(20);
-            zwrotka=wiek.zwrocWiek();
-
-            osobyStarszeLista = wiek.osobyStarszeNiz15();
-
-            Console.WriteLine("Liczba zwracaba :{0} stan zapisywania: {1}",zwrotka, wiek.zapiywaniepliku());
-            Console.WriteLine("{0}", wiek.zwrocWiek());
-
-            foreach (var osoba in osobyStarszeLista)
+            if (wynik < 5) // true false
             {
-                Console.WriteLine("Osoba starsza : {0}",osoba);
-            }
+                Console.Write("Jestem mniejsza od 5");
 
-            ////petle i tablice
-            /// 
-
-            Console.WriteLine(wynik);
-           //string wpisuzytkownika = Console.ReadLine();
-
-
-            string[] listaprogramistowtociporsche = { "andrzej", "czarli", "damsterius", "g4cester", "Igor", "Grzegorz", "Damian", "GR" };
-            double[] place = new double[listaprogramistowtociporsche.Length];
-
-            int iloscuczestnikow = listaprogramistowtociporsche.Length;
-
-            foreach (string czlonek in listaprogramistowtociporsche)
-            {
-                Console.WriteLine(czlonek);
-            }
-
-            
-            for (int i = 0, j = listaprogramistowtociporsche.Length; i < listaprogramistowtociporsche.Length; i++, j--)
-            {
-                place[i] = 3500;
-
-                    /////
-            }
-
-
-
-            string ddl = "create table Developers (" +
-
-
-                         "id serial primary key," +
-                         "name text" +
-                         "); ";
-
-            string[] pieces = ddl.Split(' ');
-
-            string classofentity = "public class " + pieces[2] + " { } ";
-
-            //using (PostgreSqlDbAccess access = new PostgreSqlDbAccess("User ID=postgres;Password=beatka;Host=localhost;Port=5432;Database=porsche; "))
-            {
-                foreach (string dev in listaprogramistowtociporsche)
+                foreach (string programista in programisci)
                 {
-                   // access.Insert(new Developers { name = dev });
+                    Console.WriteLine(programista);
                 }
-                
+
+
+
             }
 
-//            ICarGallery<int, string, double> test ; //= new 
+            Human man = new Man();
+            Human women = new Women();
+            Human Weronika = new Women("Weronika");
 
-            InsuranceSuperCover isc = new InsuranceSuperCover();
+            if (Weronika.Sex() == 2 && Weronika.validate())
+            {
+                Console.WriteLine(Weronika.Name() + "  to kobieta");
+            }
+
+
+            Console.WriteLine(Weronika.Name());
+
+            Console.WriteLine(man.Name());
+            Console.WriteLine(women.Name());
+
+            if (man.Name() == "Krzysztof")
+            {
+                Console.WriteLine("Krzysztof ma na imię Krzysztof");
+            }
+
+            if (women.Name() == "Katarzyna")
+            {
+                Console.WriteLine(women.Name() + " to Katarzyna");
+            }
+
+            if (man.Sex() == 1)
+            {
+                Console.WriteLine(man.Name() + " is a man");
+            }
+            if (women.Sex() == 2)
+            {
+                Console.WriteLine(women.Name() + " is a women");
+            }
+
+            women.validate();
+
+            if (women.validate())
+            {
+                Console.WriteLine(women.Name() + " to kobieta zgodnie z walidacją.");
+            }
+
+
             
+
+            Console.ReadLine();
         }
     }
-
-    public class Developers : IEntity
-    {
-        [SqlInsertIgnore]
-        public int id { get; set; } //5
-
-        public string name { get; set; }
-    }
-
-
 }
