@@ -372,3 +372,7 @@ C:\Users\Administrator\Documents\toci_porsche\carrental\Toci.WinForms.CarRental.
 C:\Users\Administrator\Documents\toci_porsche\carrental\Toci.WinForms.CarRental.Fun\obj\Debug\Toci.WinForms.CarRental.Fun.pdb
 C:\Users\Administrator\Documents\toci_porsche\carrental\Toci.WinForms.CarRental.Fun\bin\Debug\Autofac.dll
 C:\Users\Administrator\Documents\toci_porsche\carrental\Toci.WinForms.CarRental.Fun\bin\Debug\Autofac.xml
+C:\Users\Administrator\Documents\toci_porsche\carrental\Toci.WinForms.CarRental.Fun\bin\Debug\x64\libiomp5md.dll
+C:\Users\Administrator\Documents\toci_porsche\carrental\Toci.WinForms.CarRental.Fun\bin\Debug\x64\MathNet.Numerics.MKL.dll
+C:\Users\Administrator\Documents\toci_porsche\carrental\Toci.WinForms.CarRental.Fun\bin\Debug\x86\libiomp5md.dll
+C:\Users\Administrator\Documents\toci_porsche\carrental\Toci.WinForms.CarRental.Fun\bin\Debug\x86\MathNet.Numerics.MKL.dll
